@@ -98,7 +98,7 @@ public class Calculadora {
 		System.out.print("Digite um numero: ");
 		numero = Double.parseDouble(valores.nextLine());
 		resultado = Math.sqrt(numero);
-		System.out.print("A raiz quadrado do valor:  " + resultado);
+		System.out.println("A raiz quadrado do valor:  " + resultado);
 	}
 
 	public void resto() {
