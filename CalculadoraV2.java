@@ -110,10 +110,6 @@ public class CalculadoraV2 {
 	public void modulo(double numero) {
 		System.out.print("Digite um número: ");
 		numero = Double.parseDouble(valores.nextLine());
-		if (numero > 0) {
-			System.out.println("O módulo do valor: " + numero);
-		} else {
-			System.out.println("O módulo do valor: " + (numero * -1));
-		}
+		System.out.println("O módulo do valor é: " + Math.abs(numero));
 	}
 }
