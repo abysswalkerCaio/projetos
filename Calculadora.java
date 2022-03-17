@@ -120,11 +120,7 @@ public class Calculadora {
 	public void modulo() {
 		System.out.print("Digite um número: ");
 		numero = Double.parseDouble(valores.nextLine());
-		if (numero > 0) {
-			System.out.println("O módulo do valor: " + numero);
-		} else {
-			resultado = numero * -1;
-			System.out.println("O módulo do valor: " + resultado);
-		}
+		resultado = Math.abs(numero);
+		System.out.println("O módulo do valor: " + resultado);
 	}
 }
