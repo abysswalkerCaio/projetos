@@ -2,7 +2,7 @@ package projetos;
 
 import java.util.Random;
 
-public class gerarNumeroAleatorio {
+public class GerarNumeroAleatorio {
 	public void createRandomNumber(int qualquernumero, int demonstracao) {
 		Random gerar = new Random();
 		qualquernumero = gerar.nextInt(1, 51); //Começa de 1, vai até 50.
