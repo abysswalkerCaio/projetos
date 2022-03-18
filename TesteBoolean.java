@@ -15,7 +15,7 @@ public class TesteBoolean {
 		System.out.println(quartoteste);
 		System.out.println(quintoteste);
 		System.out.println(sextoteste);
-		
+
 		instanciar.metodoValores(0, 0);
 		instanciar.verificarIdade(0);
 	}
@@ -28,19 +28,24 @@ public class TesteBoolean {
 		boolean compararInput = primeiro == segundo;
 		System.out.println(compararInput);
 	}
-	
+
 	public void verificarIdade(int idade) {
 		System.out.print("Insira sua idade: ");
 		idade = input.nextInt();
-		
+
 		boolean permissaoidade = idade >= 18;
-		
-		if (permissaoidade == true) {
-			System.out.println("Você tem idade suficiente parar tirar a carteira de motorista!");
-		}
-		else {
-			System.out.println("Você não tem idade suficiente para tirar carteira de motorista!");
-		}
+
+		/*
+		 * if (permissaoidade == true) { System.out.
+		 * println("Você tem idade suficiente parar tirar a carteira de motorista!"); }
+		 * else { System.out.
+		 * println("Você não tem idade suficiente para tirar carteira de motorista!"); }
+		 */
+
+		// Exemplo com operador ternário.
+		System.out.println(permissaoidade ? "Você tem idade suficiente parar tirar a carteira de motorista!"
+				: "Você tem idade suficiente parar tirar a carteira de motorista!");
+
 		input.close();
 	}
 }
