@@ -65,6 +65,7 @@ public class SomaLoopWhile {
 			System.out.print("Insira outro valor: ");
 			multiplicacao = Integer.parseInt(valores.nextLine());
 		}
+		valores.close();
 		System.out.println("O resultado da mulitplicação: " + resultado);
 		System.out.println("Finalizando programa...");
 	}
